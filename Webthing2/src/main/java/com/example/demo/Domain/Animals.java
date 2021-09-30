@@ -11,7 +11,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @Entity
-@SpringBootApplication
+
 public class Animals {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -62,10 +62,7 @@ public class Animals {
 		this.jumpheight = jumpheight;
 	}
 
-	public static void main(String[] args) {
-		SpringApplication.run(Animals.class, args);
 
-	}
 
 	public Animals(long id, String firstname, String lastname, String type, int jumpheight) {
 		super();
